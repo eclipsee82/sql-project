@@ -1,0 +1,23 @@
+insert into product_type values
+(7001, 'Laptop'),
+(7002, 'Phone'),
+(7004, 'Watch'),
+(7005, 'Tablet'),
+(7003, 'Headphones'),
+(7006, 'Display');
+
+select * from product_type pt ;
+select * from products;
+
+
+insert into products values
+(1013, 'Iphone 13', 699, '2021-09-14', 7002),
+(1013, 'Iphone 13 Pro', 799, '2021-09-14', 7002),
+(1113, 'Iphone 13 mini', 599, '2021-09-14', 7002),
+(1014, 'Iphone 14', 899, '2022-09-14', 7002),
+(1114, 'Iphone 14 Pro', 999, '2022-09-14', 7002),
+(2001, 'Macbook Air M1', 699, '2020-11-01', 7001),
+(2002, 'Macbook Pro M1', 1299, '2020-11-01', 7001),
+(3002, 'AirPods Pro 2', 249, '2022-09-11', 7003),
+(3001, 'AirPods 3', 169, '2021-10-26', 7003),
+
