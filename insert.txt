@@ -4,20 +4,68 @@ insert into product_type values
 (7004, 'Watch'),
 (7005, 'Tablet'),
 (7003, 'Headphones'),
-(7006, 'Display');
+(7006, 'Display'),
+(7007, 'PC'),
+(7008, 'Accessories');
 
-select * from product_type pt ;
-select * from products;
+
 
 
 insert into products values
-(1013, 'Iphone 13', 699, '2021-09-14', 7002),
-(1013, 'Iphone 13 Pro', 799, '2021-09-14', 7002),
+(1011, 'Iphone 13', 699, '2021-09-14', 7002),
+(1012, 'Iphone 13 Pro', 799, '2021-09-14', 7002),
 (1113, 'Iphone 13 mini', 599, '2021-09-14', 7002),
 (1014, 'Iphone 14', 899, '2022-09-14', 7002),
 (1114, 'Iphone 14 Pro', 999, '2022-09-14', 7002),
+
 (2001, 'Macbook Air M1', 699, '2020-11-01', 7001),
 (2002, 'Macbook Pro M1', 1299, '2020-11-01', 7001),
+
 (3002, 'AirPods Pro 2', 249, '2022-09-11', 7003),
 (3001, 'AirPods 3', 169, '2021-10-26', 7003),
+(3003, 'AirPods Max', 549, '2021-10-16', 7003),
+
+(4001, 'Studio Display', 1599, '2022-11-01', 7006),
+(4011, 'Pro Display XDR', 4999, '2022-11-01', 7006),
+
+(5001, 'Mac mini', 699, '2021-10-25', 7007),
+(5002, 'Mac Studio', 1999, '2022-09-01', 7007),
+(5003, 'Mac Pro', 5999, '2020-09-16', 7007),
+
+(6001, 'iPad Pro', 799, '2022-09-22', 7005),
+(6002, 'iPad Air', 599, '2022-09-22', 7005),
+(6003, 'iPad 10th generation', 449, '2021-10-25', 7005),
+(6004, 'iPad 9th generation', 329, '2020-11-23', 7005),
+
+(7001, 'Apple Pencil (1st generation)', 99, '2015-11-11', 7008),
+(7002, 'Magic Keyboard Folio for iPad (10th generation)', 249, '2021-10-25', 7008),
+(7003, 'Smart Keyboard for iPad (9th generation)', 159, '2020-11-11', 7008),
+
+(8001, 'USB-C Digital AV Multiport Adapter', 69, '2022-11-11', 7008),
+(8002, 'USB-C to USB Adapter', 19, '2022-11-11', 7008),
+(8003, 'USB-C to 3.5 mm Headphone Jack Adapter', 9, '2017-11-11', 7008),
+
+(9001, 'Magic Keyboard with Touch ID and Numeric Keypad', 199, '2020-09-14', 7008),
+(9002, 'Magic Trackpad', 149, '2022-09-14', 7008),
+(9003, 'Magic Mouse', 99, '2021-09-16', 7008);
+
+
+insert into factory values
+(94898, 'China', 'Shenzhen'),
+(56489, 'USA', 'California');
+
+
+insert into store_house values
+(56847, 'Dubai', 56489, 1011, 147),
+(56847, 'Dubai', 94898, 6003, 56),
+(56847, 'Dubai', 56489, 1011, 147),
+(56847, 'Dubai', 94898, 1114, 147),
+(56847, 'Dubai', 56489, 1011, 147),
+(95581, 'Dubai', 56489, 1011, 147),
+(95581, 'Dubai', 94898, 1011, 147),
+(95581, 'Dubai', 56489, 1011, 147),
+(95581, 'Dubai', 94898, 1011, 147),
+(95581 'Dubai', 56489, 1011, 147),
+
+
 
