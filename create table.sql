@@ -67,6 +67,7 @@ amount int
 );
 
 create table products_in_store_house(
+house_id int,
 product_id int,
 amount int
 );
