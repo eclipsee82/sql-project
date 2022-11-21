@@ -6,4 +6,4 @@ drop table factory;
 drop  table product_type cascade;
 drop table products cascade;
 drop table products_in_store;
-drop table products_in_store_house;
+drop table products_in_store_house; 
