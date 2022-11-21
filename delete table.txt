@@ -1,7 +1,0 @@
-drop table online_orders;
-drop table online_customer;
-drop table store;
-drop table store_house;
-drop table factory;
-drop  table product_type cascade;
-drop table products cascade;
