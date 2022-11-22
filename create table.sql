@@ -71,8 +71,3 @@ house_id int,
 product_id int,
 amount int
 );
-
-
-
-
-

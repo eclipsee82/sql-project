@@ -1,4 +1,4 @@
-create or replace  FUNCTION person_age() RETURNS TRIGGER
+create or replace FUNCTION person_age() RETURNS TRIGGER
 AS $$
     BEGIN
         UPDATE online_customer 
@@ -13,19 +13,15 @@ CREATE TRIGGER age AFTER INSERT ON online_customer
 DROP FUNCTION person_age;
 
 
- create or replace  FUNCTION total_sum() RETURNS TRIGGER
+
+create or replace FUNCTION total_sum() RETURNS TRIGGER
 AS $$
     BEGIN
-        UPDATE online_orders 
-        SET total_sum  = products.price * online_orders.amount 
-        WHERE online_orders.products  = products.product_id;
+        UPDATE online_orders
+        SET total_sum = amount * public.products_in_store.price
+        WHERE store = public.products_in_store.price;
         RETURN new;
     end;
     $$ LANGUAGE plpgsql;
-CREATE TRIGGER tot_sum AFTER INSERT ON online_orders
+CREATE TRIGGER total_sum AFTER INSERT ON online_customer
     FOR EACH ROW EXECUTE PROCEDURE total_sum();
-   
-   
-
- 	
-    
