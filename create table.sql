@@ -70,4 +70,8 @@ create table products_in_store_house(
 house_id int,
 product_id int,
 amount int
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> 7def20b84ec39fda766771f1a275169ea92e5093

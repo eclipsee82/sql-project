@@ -14,6 +14,7 @@ DROP FUNCTION person_age;
 
 
 
+
 create or replace FUNCTION total_sum() RETURNS TRIGGER
 AS $$
     BEGIN
@@ -25,3 +26,4 @@ AS $$
     $$ LANGUAGE plpgsql;
 CREATE TRIGGER total_sum AFTER INSERT ON online_customer
     FOR EACH ROW EXECUTE PROCEDURE total_sum();
+
