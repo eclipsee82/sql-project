@@ -280,5 +280,6 @@ insert into products_in_store values
 (2002, 59, 1349, 36),
 (2001, 59, 761, 47);
 
+select * from online_orders oo;
 insert into online_orders(order_id, store, c_id, products, amount, order_date) values
 (46547, 4213, 1481, 6001, 2, '2022-09-26');
