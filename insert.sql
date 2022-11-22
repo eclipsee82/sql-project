@@ -203,7 +203,6 @@ insert into products_in_store values
 (6004, 5436, 160, 25),
 (6003, 5436, 499, 32);
 
-
 /*Магазин 4*/
 insert into products_in_store values
 (8001, 2142, 75, 99),
@@ -216,6 +215,7 @@ insert into products_in_store values
 (1114, 2142, 1029, 32),
 (5002, 2142, 2000, 4),
 (6001, 2142, 720, 73);
+
 
 /*Магазин 5*/
 insert into products_in_store values
@@ -279,3 +279,6 @@ insert into products_in_store values
 insert into products_in_store values
 (2002, 59, 1349, 36),
 (2001, 59, 761, 47);
+
+insert into online_orders(order_id, store, c_id, products, amount, order_date) values
+(46547, 4213, 1481, 6001, 2, '2022-09-26');
